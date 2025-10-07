@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home</title>
+  <link rel="stylesheet" href="../public/css/styles.css">
+</head>
+<body>
+  <div id="albums-screen">
+    <h1>Ultimate Notes</h1>
+    <form id="album-form">
+      <input type="text" id="album-name" placeholder="Album name" required>
+      <button type="submit">Add Album</button>
+    </form>
+    <h2>Albums</h2>
+    <ul id="album-list"></ul>
+  </div>
+
+  <div id="task-section" style="display:none;">
+    <h2 id="selected-album-title"></h2>
+    <form id="task-form">
+      <select id="task-type" required>
+        <option value="" disabled selected>Select task type</option>
+        <option value="text">Text</option>
+        <option value="photo">Photo</option>
+        <option value="voice">Voice Note</option>
+      </select>
+      <div id="task-inputs"></div>
+      <button type="submit">Add Task</button>
+    </form>
+    <ul id="task-list"></ul>
+    <button id="back-to-albums">Back to Albums</button>
+  </div>
+  <script src="../public/js/script.js"></script>
+</body>
+</html>
